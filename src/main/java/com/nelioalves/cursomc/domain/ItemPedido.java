@@ -16,13 +16,13 @@ public class ItemPedido implements Serializable{
 	@EmbeddedId
 	private ItemPedidoPK id = new ItemPedidoPK();
 	
-	private double desconto;
+	private Double desconto;
 	private Integer quantidade;
 	private double preco;
 	
 	public ItemPedido() {}
 
-	public ItemPedido(Pedido pedido, Produto produto, double desconto, Integer quantidade, double preco) {
+	public ItemPedido(Pedido pedido, Produto produto, Double desconto, Integer quantidade, double preco) {
 		super();
 		id.setPedido(pedido);
 		id.setProduto(produto);
