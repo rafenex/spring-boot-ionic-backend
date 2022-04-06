@@ -75,7 +75,7 @@ public class ItemPedido implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(desconto);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -87,8 +87,10 @@ public class ItemPedido implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		ItemPedido other = (ItemPedido) obj;
-		return Double.doubleToLongBits(desconto) == Double.doubleToLongBits(other.desconto);
+		return Objects.equals(id, other.id);
 	}
+
+
 	
 	
 	
