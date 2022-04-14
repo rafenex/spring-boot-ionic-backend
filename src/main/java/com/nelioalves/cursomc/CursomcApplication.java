@@ -31,7 +31,7 @@ import com.nelioalves.cursomc.repositories.ItemPedidoRepository;
 import com.nelioalves.cursomc.repositories.PagamentoRepository;
 import com.nelioalves.cursomc.repositories.PedidoRepository;
 import com.nelioalves.cursomc.repositories.ProdutoRepository;
-///dsaddsa
+
 
 @SpringBootApplication
 public class CursomcApplication implements CommandLineRunner {
